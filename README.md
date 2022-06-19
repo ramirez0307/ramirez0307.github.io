@@ -4,7 +4,8 @@
   * Educational Journey
   * Program Reflection
   * Final Portfolio Summary
-  
+
+
 * ### Refinement Plan
 
 * ### Code Review
@@ -14,10 +15,12 @@
   * Artifact Justification
   * Artifact Reflection
 
+
 * ### Enhancement Two - Algorithms and data structure
   * Artifact Description
   * Artifact Justification
   * Artifact Reflection
+
 
 * ### Enhancement Three - Databases
   * Artifact Description
