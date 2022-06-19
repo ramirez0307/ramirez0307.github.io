@@ -1,11 +1,11 @@
 # Table of content
 1. Professional Self-Assessment
-2. Artifact Introduction
-3. Refinement Plan
-4. Code Review
-5. Enhancement One - Software design and engineering
-6. Enhancement Two - Algorithms and data structure 
-7. Enhancement Three - Databases              
+2. [Artifact Introduction](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#artifact-introduction)
+3. [Refinement Plan](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#refinement-plan)
+4. [Code Review](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#code-review)
+5. [Enhancement One - Software design and engineering](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-one---software-design-and-engineering)
+6. [Enhancement Two - Algorithms and data structure](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-two---algorithms-and-data-structure)
+7. [Enhancement Three - Databases](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-three---databases)              
 
 
 # Professional Self-Assessment
