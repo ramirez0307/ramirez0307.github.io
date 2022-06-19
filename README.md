@@ -1,11 +1,11 @@
 # Table of content
 1. Professional Self-Assessment
-2. [Artifact Introduction](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#artifact-introduction)
-3. [Refinement Plan](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#refinement-plan)
-4. [Code Review](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#code-review)
-5. [Enhancement One - Software design and engineering](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-one---software-design-and-engineering)
-6. [Enhancement Two - Algorithms and data structure](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-two---algorithms-and-data-structure)
-7. [Enhancement Three - Databases](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-three---databases)              
+2. [Artifact Introduction](ramirez0307.github.io/edit/main/README.md#artifact-introduction)
+3. [Refinement Plan](ramirez0307.github.io/edit/main/README.md#refinement-plan)
+4. [Code Review](ramirez0307.github.io/edit/main/README.md#code-review)
+5. [Enhancement One - Software design and engineering](ramirez0307.github.io/edit/main/README.md#enhancement-one---software-design-and-engineering)
+6. [Enhancement Two - Algorithms and data structure](ramirez0307.github.io/edit/main/README.md#enhancement-two---algorithms-and-data-structure)
+7. [Enhancement Three - Databases](ramirez0307.github.io/edit/main/README.md#enhancement-three---databases)              
 
 
 # Professional Self-Assessment
@@ -32,6 +32,8 @@ This application uses an SQLite database to store data locally on the android de
 
 # Code Review
 -------------------------------------------------------
+https://www.youtube.com/watch?v=14hq23RkpcU
+In this code review, I dive more into the details of how I plan to enhance this artifact in all three categories required for this project.
 
 -------------------------------------------------------
 # Enhancement One - Software design and engineering
