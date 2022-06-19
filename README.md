@@ -35,17 +35,145 @@ This application uses an SQLite database to store data locally on the android de
 In this code review, I dive more into the details of how I plan to enhance this artifact in all three categories required for this project.
 [Code Review](https://www.youtube.com/watch?v=14hq23RkpcU)
 
--------------------------------------------------------
 # Enhancement One - Software design and engineering
 -------------------------------------------------------
+The original design I had for this application was minimal as I only aimed to accomplished what was required for the assignment. This consisted of four Activities:
+1. Dashboard – Is the main point of navigation between the main screen and other activities.
+2. Add Item – Allow the user to add new item into inventory
+3. Pick Product – Allows the user to pick time and remove it from inventory
+4. Inventory – Display all the item in inventory
+
+![Original Degign](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Inventory%20App%20Original%20Design.png)
+
+As I have mentioned before my goal is to expand the application to perform more task that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, monitor.
+
 
 -------------------------------------------------------
 # Enhancement Two - Algorithms and data structure 
 -------------------------------------------------------
 
--------------------------------------------------------
+
 # Enhancement Three - Databases  
 -------------------------------------------------------
+When I first created the DBHandler class, which handles all interaction with the database, I created methods that became repetitive as they performed similar actions. This is very counterproductive as hundreds of queries would be executed in the application, meaning the same code would have to be repeated many times, affecting the application's overall performance.
+
+![OldCodeExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/OldCodeExample.png)
+ 
+### Enhancement intro
+
+For my enhancement, my goal was to create different methods to handle all the other queries needed from a single method. As a result, I made three methods to accomplish that task for all cases.
+
+### Insert data into the database method
+
+![DatabaseTableArrays.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/DatabaseTableArrays.png)
+
+![InsertDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InsertDataMethod.png)
+
+The method accepts two parameters, a table name as a string and an array of values that will be entered into the database. Since there are many tables in the database and each table contains a different number of columns, it is not practical to directly pass the name of each column in a table as a parameter. Instead, I will use the table name to determine which table needs to be accessed. To accomplish this, I created multiple arrays named after each of the existing tables in the database, and each variety contains the column names of each table.
+
+How is the suitable array selected? When determining what array to use, I use the “tableName” String to create a copy of the correct array and assign it to an empty array called “table_name.” Lastly, I use a contentValue instance to put each value in the corresponding table. For example, if the user creates a new account, they will pass the following parameters to the insertData() method.
+1. tableName = Users
+2. String [] values = {“00000”, Joe”, “Joe@hotmail.com”, “Joe03”, “no” , “no”}
+
+#### Obtaining Data
+The values passed to the array will be obtained in different ways.
+
+1. A new user ID will be automatically generated using the generateUserId() method;
+
+![GenerateUserIdMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GenerateUserIdMethod.png)
+
+2. The username, email, and password will be acquired from the user input, by getting the string values of the textInputEditText within the activity.
+
+![CreateAccountActivity.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/CreateAccountActivity.png)
+
+3. Remember me, and Email validation are set to “no” by default and are updated when the necessary action is performed.
+
+#### Adding data to table in database
+
+When the insertData() method is executed, it will first determine what array needs to be used, so the conditional statement runs. Since the user passed "Users" as the tableName, the first statement is true, making table_name equal to the array user.
+
+![TableSelectionConditionalStatement.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/TableSelectionConditionalStatement.png)
+
+Which means that now:
+
+![SelectedTableArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/SelectedTableArray.png)
+
+![InitializeEmptyArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InitializeEmptyArray.png)
+
+Next, a for loop iterate through the table_name array matching each index and putting the information in the contentValues instance as a key: value pair, where the key is the column name specified by the index in table_name and the value is specified by the index in the array of values passed as a parameter.
+
+![LoopToAddDataToContentValue.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/LoopToAddDataToContentValue.png)
+
+The for loop above executes the same amount of time as the values that exist in the array. Below is a visual presentation of how this would have been completed by directly passing the key: value pair to the contentValues.
+
+![ExampleOfDirectImput.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/ExampleOfDirectImput.png)
+
+If we only have one table to interact with, this approach would be ideal as the keys will never change, but since we have multiple tables, this approach would not work since the keys will change based on what table is being used.
+
+Finally, All the data in contentValues is read and entered into its respective table.
+
+![LoopAddDataToDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/LoopAddDataToDatabase.png)
+
+### Get data from the database method
+
+![GetDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetDataMethod.png)
+
+To retrieve data from the database, I created a simple method that takes a string as a parameter, the string that is passed is an SQL statement that calls for the specific data. For example:
+
+This query gets the username and password from the Username table in the database where the username is Carlos.
+
+![GetDataQueryExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetDataQueryExample.png)
+
+This query selects all the data from the Vendors database
+
+![GetDataQueryExample2.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetDataQueryExample2.png)
+
+The retrieved data is return as a Cursor which than can be accessed using a while loop to manipulate the rawData it contains.
+
+![SaveDataInCursor.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/SaveDataInCursor.png)
+
+![LoopThrougthTheDataAndPerformAction.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/LoopThrougthTheDataAndPerformAction.png)
+
+### Update data on the database method
+To update a value in the database I created an update method that takes in four parameters.
+1.	A table name as a String (Specifies what table will be updated)
+2.	A set of key and values as a HashMap (Specifies the column names that will be updated and the new value)
+3.	A columnName as a String (specifies the column that will serve as the identifier)
+4.	A rowName as a String (specifies which row will be updated)
+
+Each parameter is essential in updating the correct information in the database.
+
+![UpdateDataMathod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/UpdateDataMathod.png)
+
+When the user data is originally entered is look as follow:
+
+![OriginalDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/OriginalDataInDatabase.png)
+
+The bellow code updates the data using the code below. 
+
+![InplementsUpdateDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InplementsUpdateDataMethod.png)
+
+How this work? I created a map that contains one input, a key = “RememberMe” whis is the name of the table that will be updated, and a value = currentCheckBoxStatus which is updated based on the status of a checkbox.
+
+![RemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/RemenberMe.png)
+
+![GetRemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetRemenberMe.png)
+
+Once I determined the column I want to update and the new value, I can call the update method from the DBHandler and pass the necessary parameters. 
+Update table name Users changing the value of Column RememberMe to the current value of currentCheckBoxStatus. Use the column name Username as the referencing column and withing that column update the rowName with the value of Carlos. 
+This will update a specific cell withing an specified table.
+
+![UpdatedDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/UpdatedDataInDatabase.png)
+
+Why use a HashMap? When dealing with a pair of values, maps provide the easiest implementations. I could accomplish something similar using an array, but that will require the creation of two arrays, one that holds the column to be updated and another one to hold the value. Both arrays will have to be iterated, and this could increase the chances of errors. A HashMap makes it simple, as it makes it clear to the developer what values will be updated without worrying about the indexes on an array. 
+
+### Skills 
+
+Through the course of this enhancement, the skills that I can demonstrate are how I can create effective methods that interact with all the tables in the database. These methods work for all possible scenarios that require adding, reading, and updating data. Additionally, I can showcase my ability to create an SQLite database for an android application and perform specific actions based on the user request. Lastly, aside from source code, I'm also able to demonstrate a basic understanding of creating database schema to display a visual representation of the database and how each table interacts with one another.
+
+
+
+
 
 
 
