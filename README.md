@@ -1,10 +1,10 @@
 # Table of content
 
 * ### Professional Self-Assessment
-  * Educational Journey
-  * Program Reflection
-  * Final Portfolio Summary
-#                           
+  * #### Educational Journey
+  * #### Program Reflection
+  * #### Final Portfolio Summary
+                           
 * ### Refinement Plan
 
 * ### Code Review
