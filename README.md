@@ -1,9 +1,9 @@
 # Table of content
 
 * ### Professional Self-Assessment
-  * #### Educational Journey
-  * #### Program Reflection
-  * #### Final Portfolio Summary
+  * #### [Educational Journey](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-two---algorithms-and-data-structure)
+  * #### [Program Reflection](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-two---algorithms-and-data-structure)
+  * #### [Final Portfolio Summary](https://github.com/ramirez0307/ramirez0307.github.io/edit/main/README.md#enhancement-two---algorithms-and-data-structure)
                            
 * ### Refinement Plan
 
