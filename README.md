@@ -32,8 +32,8 @@ This application uses an SQLite database to store data locally on the android de
 
 # Code Review
 -------------------------------------------------------
-#### (https://www.youtube.com/watch?v=14hq23RkpcU)
 In this code review, I dive more into the details of how I plan to enhance this artifact in all three categories required for this project.
+[Code Review](https://www.youtube.com/watch?v=14hq23RkpcU)
 
 -------------------------------------------------------
 # Enhancement One - Software design and engineering
