@@ -47,7 +47,41 @@ The original design I had for this application was minimal as I only aimed to ac
 
 As I have mentioned before my goal is to expand the application to perform more task that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, monitor.
 
+### Outbound
+Within the outbound part of the app, the user will have the ability to:
 
+1. Maintain sales Order – Allows the user to create, update, view and delete sales orders
+2. Display Sale Order – Display all sales orders
+3. Pick Order – Pick created sales order
+4. Ship Order – Ship any pick order
+5. View Order Status – View the status of the order
+6. Ship Order history – View the history of any sales order
+
+![OutboudnDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/OutboudnDashboard.png)
+
+### Outbound
+Within the inbound part of the app, the user will have the ability to:
+
+1.	Create Inbound PO – Create an inbound PO to hold a list of products to be purchase
+2.	Receive Inbound PO – Validate and receive product according to the inbound PO
+3.	Inbound Queries – Execute different search queries in regard to the inbound PO’s
+
+![InboundDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InboundDashboard.png)
+
+### Outbound
+Within the inbound part of the app, the user will have the ability to:
+
+1.	Display Inventory – Show all the inventory available to the user
+2.	Inventory History – Allow the user to search a product history 
+3.	Cycle Count – Count the warehouse to ensure the accuracy of weight and product qty
+4.	Replenishment - automatically create replenishment task to move product to pick location when needed.
+5.	Ad-hoc – Allow the user to more product between location when needed
+
+![MonitorDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/MonitorDashboard.png)
+
+### Skills 
+
+The skill that are showcased on this enhancement is how I’m able to get an idea and create a design that implement that idea and make it an application. Additionally, it shows my knowledge in designing mobile application that are interactive using android studio, both using drag and drop method as well as using xml code. With the new enhancement I will be able to effectively demonstrate an application with a design that is a lot more complex than I originally created, allowing me to show more than just code, but also creativity and design traits.
 
 # Enhancement Two - Algorithms and data structure 
 -------------------------------------------------------
