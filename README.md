@@ -48,10 +48,33 @@ The original design I had for this application was minimal as I only aimed to ac
 As I have mentioned before my goal is to expand the application to perform more task that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, monitor.
 
 
--------------------------------------------------------
+
 # Enhancement Two - Algorithms and data structure 
 -------------------------------------------------------
 
+I Included this artifact for my ePorfolio because I’m able to showcase a more broad and diverse use of my abilities and everything I have learned throughout the program. Since, I'm trying to create an entire application that contains many classes, rather than a piece of code that sit on a single class, there are many instances where I make use of data structures and algorithms. For this enhancement, I will focus on three specific parts that show my use and thought process of Array, ArrayList, and Maps.
+
+### Array
+
+![Array.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Array.png)
+
+In this case, I decided to make use of a simple Array because I already have prior knowledge of the number of elements and values each array will have. Knowing this information, I’m able to declare and initialize the array in a single line of code, making the code less clustered. The Array "table_name" is empty because it will hold the value depending on the user selection. The users, customers, and vendors array hold the column names for the tables in the database, and using a conditional statement the 'table_name' will be equal to a copy of the table the user wants to interact with. 
+
+### ArrayList
+
+![ArrayLIst.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/ArrayLIst.png)
+
+In this case, a simple array would not be effective since we don’t know how many elements will be entered in the ArrayList. This ArrayList holds Textviews that are created based on the number of entries that exist in the customer's table in the database, which could be 10 or 1000. I created a query that retrieves all the data in the Customer table and stores it as a cursor that will then be read using a while loop. Within the while loop, a text view is created holding all the data from each row, later adding it to the ArrayList. Finally, the ArrayList is read and every element within the array is added to a linear layout and displayed to the user.
+
+### Map
+
+![Map.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Map.png)
+
+The last example I want to cover is the use of a map, which stores information as a key and value pair. When updating the database, one must specify the column and value that needs to be updated and a map is the best implementation for this scenario. I could achieve the same result by creating two arrays of passing multiple sting values to the method, but this would be counterproductive as it will require a lot of unnecessary code. The update method is implemented, the key serves as the Colum that need to be updated, and the value serves as the new value for the column. The row is specified in the SQL statement using the WHERE clause.
+
+### Skills
+
+I believe I met the course objective I planned for this enhancement, using the different types of data structures I can demonstrate my ability to know when is necessary to use each data structure and how to properly implement them. I did not face any challenges as I have used this data structure before in previous work, so I have a good understanding of how they should be used.
 
 # Enhancement Three - Databases  
 -------------------------------------------------------
