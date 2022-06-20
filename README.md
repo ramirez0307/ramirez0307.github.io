@@ -3,15 +3,44 @@
 2. Artifact Introduction
 3. Refinement Plan
 4. Code Review
-5. Enhancement One - Software design and engineering
-6. Enhancement Two - Algorithms and data structure
-7. Enhancement Three - Databases          
+5. Software design and engineering
+6. Algorithms and data structure
+7. Databases          
 
 
 # Professional Self-Assessment
 -------------------------------------------------------
+I started my journey in the computer science program back in 2019, and during the past three years, I have learned many skills that will be important and very useful in my future career path. Every course I have taken introduced me to a new skill and allowed me to understand how I can integrate it into my future career. One of the essential skills I learned came after taking the IT-145 course, an introduction to software development concentrated in Java. In this class, I built a better understanding of software development, mainly how to write basic java codes. Also, I could dive into the world of Object-Oriented Programming (OOP) by acquiring a basic understanding of classes, inheritance, polymorphism, abstraction, and encapsulation. Another valuable skill I learned was android development from the CS-360 Mobile Architect & programing course. I used my Java knowledge in this course and combined it with Android Studio to create an interactive mobile application. As I worked on different projects, I was able to learn and improve on various skills:
+1. User Interface (UI) design
+2. Work with databases using SQLite
+3. Think of the end-user needs and translate those needs into efficient code
 
+Improve my knowledge of the java programming language
+Overall, the computer science program has helped me learn many technical skills to help me reach my career goal. Additionally, it allowed me to improve other soft skills such as problem-solving and critical thinking, adaptability, perseverance, dedication, collaboration, and the ability to deal with difficult situations. 
 
+While taking the IT-315-Object Orient Analysis/Design, I learned to create a diagram that implements all the requirements that a system may need, including external and internal influences. Such as user-case diagrams, CRC Cards and SIS Diagrams.
+
+![CRCCard.PNG](https://github.com/ramirez0307/ramirez0307.github.io/blob/main/Personal%20Reflection%20Files/315Img.png)
+
+Regarding collaborating in a team environment, CS-250 opened the door to the world of teamwork by introducing the software development life cycle (SDLC). In this course, I understood some of the different existing models, such as waterfall, interactive, spiral, and agile. However, since the course was more emphasized the agile methodology, I created a more profound understanding of this model, such as its advantages, disadvantages, and how the entire process is implemented. This skill will be crucial as I take the next step into my career as it provides me with a basic understanding of how a developer team operates.
+
+During this program, I also expanded my knowledge of Java development, android studio, and the software development life cycle. I also was able to gain knowledge on a wide range of topics that I will be able to implement in my future career. Such as:
+
+#### Version Control
+1. Git
+2. GitHub
+#### DataBase
+1. MongoDB
+2. MySQL
+3. Relational and Non-relational Databases
+4. SQLite
+#### Programming Languages
+1. Python
+2. Java
+3. C#
+4. C++
+
+The artifact I selected to present in this portfolio is a piece that can showcase many of the skills I have acquired throughout the course. I display skills beyond source code and skills that represent my knowledge of computer programming. This android inventory application demonstrates my implementation and understanding of software design and engineering, algorithms and data structures, and databases. 
 
 # Artifact Introduction
 -------------------------------------------------------
@@ -47,6 +76,8 @@ The original design I had for this application was minimal as I only aimed to ac
 
 As I have mentioned before my goal is to expand the application to perform more task that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, monitor.
 
+![AppDesign.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/AppDesign.PNG)
+
 ### Outbound
 Within the outbound part of the app, the user will have the ability to:
 
@@ -59,7 +90,7 @@ Within the outbound part of the app, the user will have the ability to:
 
 ![OutboudnDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OutboundDashboard.png)
 
-### Outbound
+### Inbound
 Within the inbound part of the app, the user will have the ability to:
 
 1.	Create Inbound PO – Create an inbound PO to hold a list of products to be purchase
@@ -68,8 +99,8 @@ Within the inbound part of the app, the user will have the ability to:
 
 ![InboundDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InboundDashboard.png)
 
-### Outbound
-Within the inbound part of the app, the user will have the ability to:
+### Monitor
+Within the Monitor part of the app, the user will have the ability to:
 
 1.	Display Inventory – Show all the inventory available to the user
 2.	Inventory History – Allow the user to search a product history 
@@ -81,7 +112,7 @@ Within the inbound part of the app, the user will have the ability to:
 
 ### Skills 
 
-The skill that are showcased on this enhancement is how I’m able to get an idea and create a design that implement that idea and make it an application. Additionally, it shows my knowledge in designing mobile application that are interactive using android studio, both using drag and drop method as well as using xml code. With the new enhancement I will be able to effectively demonstrate an application with a design that is a lot more complex than I originally created, allowing me to show more than just code, but also creativity and design traits.
+The skills showcased in this enhancement is my ability to get an idea and design an interactive user interface that takes a list of requirements and makes a design that is both understandable and easy to implement. Additionally, it shows my knowledge in designing interactive mobile applications using android studio, using the drag and drop method and XML code. With the new enhancement, I effectively demonstrated an application with a design that is much more complex than the one originally created while keeping the user experience in mind. Lastly, since I chose to use one single artifact for all three categories on this portfolio, I display the ability to create a design and convert that design into XML code. Thus, creating text views, buttons, layouts, and intent allows the application to move between activities, giving the user a unique experience.
 
 # Enhancement Two - Algorithms and data structure 
 -------------------------------------------------------
