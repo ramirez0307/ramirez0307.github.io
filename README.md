@@ -20,7 +20,7 @@ Overall, the computer science program has helped me learn many technical skills 
 
 While taking the IT-315-Object Orient Analysis/Design, I learned to create a diagram that implements all the requirements that a system may need, including external and internal influences. Such as user-case diagrams, CRC Cards and SIS Diagrams.
 
-![CRC%20Card.PNG](https://github.com/ramirez0307/ramirez0307.github.io/blob/main/Personal%20Reflection%20Files/315Img.png?raw=true)
+![CRC%20Card.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/CRC%20Card.PNG)
 ![User%20Case%20Diagram.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/User%20Case%20Diagram.PNG)
 ![SIS%20Diagram.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/SIS%20Diagram.PNG)
 
