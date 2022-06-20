@@ -68,24 +68,24 @@ In this code review, I dive more into the details of how I plan to enhance this 
 
 # Enhancement One - Software design and engineering
 -------------------------------------------------------
-The original design I had for this application was minimal as I only aimed to accomplished what was required for the assignment. This consisted of four Activities:
-1. Dashboard – Is the main point of navigation between the main screen and other activities.
-2. Add Item – Allow the user to add new item into inventory
-3. Pick Product – Allows the user to pick time and remove it from inventory
-4. Inventory – Display all the item in inventory
+My original design for this application was minimal, as I only aimed to accomplish what was required for the assignment. This consisted of four Activities:
+1. Dashboard – This is the main navigation point between the main screen and other activities.
+2. Add Item – Allow the user to add a new item to the inventory
+3. Pick Product – This allows the user to pick an item and remove it from the inventory
+4. Inventory – Display all the items in the inventory
 
 ![OldDesign.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OldDesign.png)
 
-As I have mentioned before my goal is to expand the application to perform more task that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, monitor.
+As mentioned before, my goal is to expand the application to perform more tasks that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, and monitoring.
 
 ![AppDesign.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/AppDesign.PNG)
 
 ### Outbound
 Within the outbound part of the app, the user will have the ability to:
 
-1. Maintain sales Order – Allows the user to create, update, view and delete sales orders
+1. Maintain sales Order – Allows the user to create, update, view , and delete sales orders
 2. Display Sale Order – Display all sales orders
-3. Pick Order – Pick created sales order
+3. Pick Order – Pick a created sales order
 4. Ship Order – Ship any pick order
 5. View Order Status – View the status of the order
 6. Ship Order history – View the history of any sales order
@@ -95,9 +95,9 @@ Within the outbound part of the app, the user will have the ability to:
 ### Inbound
 Within the inbound part of the app, the user will have the ability to:
 
-1.	Create Inbound PO – Create an inbound PO to hold a list of products to be purchase
+1.	Create Inbound PO – Create an inbound PO to hold a list of products to be purchased
 2.	Receive Inbound PO – Validate and receive product according to the inbound PO
-3.	Inbound Queries – Execute different search queries in regard to the inbound PO’s
+3.	Inbound Queries – Execute different search queries regarding the inbound POs
 
 ![InboundDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InboundDashboard.png)
 
@@ -105,27 +105,27 @@ Within the inbound part of the app, the user will have the ability to:
 Within the Monitor part of the app, the user will have the ability to:
 
 1.	Display Inventory – Show all the inventory available to the user
-2.	Inventory History – Allow the user to search a product history 
-3.	Cycle Count – Count the warehouse to ensure the accuracy of weight and product qty
-4.	Replenishment - automatically create replenishment task to move product to pick location when needed.
-5.	Ad-hoc – Allow the user to more product between location when needed
+2.	Inventory History – Allow the user to search a product history.
+3.	Cycle Count – Count the warehouse to ensure the accuracy of weight and product qty.
+4.	Replenishment - automatically create replenishment task to move product to pick the location when needed.
+5.	Ad-hoc – Allow the user to access more products between locations when needed
 
 ![MonitorDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/MonitorDashboard.png)
 
 ### Skills 
 
-The skills showcased in this enhancement is my ability to get an idea and design an interactive user interface that takes a list of requirements and makes a design that is both understandable and easy to implement. Additionally, it shows my knowledge in designing interactive mobile applications using android studio, using the drag and drop method and XML code. With the new enhancement, I effectively demonstrated an application with a design that is much more complex than the one originally created while keeping the user experience in mind. Lastly, since I chose to use one single artifact for all three categories on this portfolio, I display the ability to create a design and convert that design into XML code. Thus, creating text views, buttons, layouts, and intent allows the application to move between activities, giving the user a unique experience.
+The skills showcased in this enhancement are my ability to get an idea and design an interactive user interface that takes a list of requirements and makes a design understandable and easy to implement. Additionally, it shows my knowledge in designing interactive mobile applications using android studio, using the drag and drop method, and XML code. With the new enhancement, I effectively demonstrated an application with a much more complex design than the one originally created while keeping the user experience in mind. Lastly, since I chose to use one single artifact for all three categories on this portfolio, I display the ability to create a design and convert that design into XML code. Thus, creating text views, buttons, layouts, and intent allows the application to move between activities, giving the user a unique experience.
 
 # Enhancement Two - Algorithms and data structure 
 -------------------------------------------------------
 
-I Included this artifact for my ePorfolio because I’m able to showcase a more broad and diverse use of my abilities and everything I have learned throughout the program. Since, I'm trying to create an entire application that contains many classes, rather than a piece of code that sit on a single class, there are many instances where I make use of data structures and algorithms. For this enhancement, I will focus on three specific parts that show my use and thought process of Array, ArrayList, and Maps.
+I Included this artifact for my ePorfolio because I can showcase a more broad and diverse use of my abilities and everything I have learned throughout the program. Since I'm trying to create an entire application that contains many classes, rather than a piece of code that sit on a single class, there are many instances where I make use of data structures and algorithms. For this enhancement, I will focus on three specific parts that show my use and thought process of Array, ArrayList, and Maps.
 
 ### Array
 
 ![Array.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/Array.jpg)
 
-In this case, I decided to make use of a simple Array because I already have prior knowledge of the number of elements and values each array will have. Knowing this information, I’m able to declare and initialize the array in a single line of code, making the code less clustered. The Array "table_name" is empty because it will hold the value depending on the user selection. The users, customers, and vendors array hold the column names for the tables in the database, and using a conditional statement the 'table_name' will be equal to a copy of the table the user wants to interact with. 
+In this case, I decided to make use of a simple Array because I already have prior knowledge of the number of elements and values each array will have. Knowing this information, I’m able to declare and initialize the array in a single line of code, making the code less clustered. The Array "table_name" is empty because it will hold the value depending on the user selection. The users, customers, and vendors array hold the column names for the tables in the database, and using a conditional statement, the 'table_name' will be equal to a copy of the table the user wants to interact with. 
 
 ### ArrayList
 
@@ -172,19 +172,19 @@ The values passed to the array will be obtained in different ways.
 
 ![GenerateUserIdMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GenerateUserIdMethod.png)
 
-2. The username, email, and password will be acquired from the user input, by getting the string values of the textInputEditText within the activity.
+2. The username, email, and password will be acquired from the user input by getting the string values of the textInputEditText within the activity.
 
 ![CreateAccountActivity.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/CreateAccountActivity.PNG)
 
-3. Remember me, and Email validation are set to “no” by default and are updated when the necessary action is performed.
+3. Remember me, and Email validation is set to "no" by default and is updated when the necessary action is performed.
 
-#### Adding data to table in database
+#### Adding data to table in the database
 
 When the insertData() method is executed, it will first determine what array needs to be used, so the conditional statement runs. Since the user passed "Users" as the tableName, the first statement is true, making table_name equal to the array user.
 
 ![TableSelectionConditionalStatement.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/TableSelectionConditionalStatement.png)
 
-Which means that now:
+This means that now:
 
 ![SelectedTableArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/SelectedTableArray.png)
 
@@ -194,11 +194,11 @@ Next, a for loop iterate through the table_name array matching each index and pu
 
 ![LoopToAddDataToContentValue.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/LoopToAddDataToContentValue.png)
 
-The for loop above executes the same amount of time as the values that exist in the array. Below is a visual presentation of how this would have been completed by directly passing the key: value pair to the contentValues.
+The for loop above executes the same amount of time as the values in the Array. Below is a visual presentation of how this would have been completed by directly passing the key: value pair to the contentValues.
 
 ![ExampleOfDirectImput.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/ExampleOfDirectImput.png)
 
-If we only have one table to interact with, this approach would be ideal as the keys will never change, but since we have multiple tables, this approach would not work since the keys will change based on what table is being used.
+If we only have one table to interact with, this approach would be ideal as the keys will never change, but since we have multiple tables, this approach would not work since the keys will vary based on what table is being used.
 
 Finally, All the data in contentValues is read and entered into its respective table.
 
@@ -208,26 +208,26 @@ Finally, All the data in contentValues is read and entered into its respective t
 
 ![GetDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetDataMethod.png)
 
-To retrieve data from the database, I created a simple method that takes a string as a parameter, the string that is passed is an SQL statement that calls for the specific data. For example:
+To retrieve data from the database, I created a simple method that takes a string as a parameter; the string passed is an SQL statement that calls for the specific data. For example:
 
 This query gets the username and password from the Username table in the database where the username is Carlos.
 
 ![GetDataQueryExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetDataQueryExample.png)
 
-This query selects all the data from the Vendors database
+This query selects all the data from the Vendors database.
 
 ![GetDataQueryExample2.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetDataQueryExample2.png)
 
-The retrieved data is return as a Cursor which than can be accessed using a while loop to manipulate the rawData it contains.
+The retrieved data is returned as a Cursor which then can be accessed using a while loop to manipulate the raw data it contains.
 
 ![SaveDataInCursor.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/SaveDataInCursor.png)
 
 ![LoopThrougthTheDataAndPerformAction.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/LoopThrougthTheDataAndPerformAction.png)
 
 ### Update data on the database method
-To update a value in the database I created an update method that takes in four parameters.
+I created an update method that takes in four parameters to update a value in the database.
 1.	A table name as a String (Specifies what table will be updated)
-2.	A set of key and values as a HashMap (Specifies the column names that will be updated and the new value)
+2.	A set of keys and values as a HashMap (Specifies the column names that will be updated and the new value)
 3.	A columnName as a String (specifies the column that will serve as the identifier)
 4.	A rowName as a String (specifies which row will be updated)
 
@@ -235,31 +235,29 @@ Each parameter is essential in updating the correct information in the database.
 
 ![UpdateDataMathod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/UpdateDataMathod.png)
 
-When the user data is originally entered is look as follow:
+When the user data is entered initially it look as follows:
 
 ![OriginalDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OriginalDataInDatabase.png)
 
-The bellow code updates the data using the code below. 
+I update the data using the code below. 
 
 ![InplementsUpdateDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InplementsUpdateDataMethod.png)
 
-How this work? I created a map that contains one input, a key = “RememberMe” whis is the name of the table that will be updated, and a value = currentCheckBoxStatus which is updated based on the status of a checkbox.
+How does this work? I created a map containing one input, a key = "RememberMe" which is the table's name that will be updated, and a value = currentCheckBoxStatus which is updated based on the status of a checkbox.
 
 ![RemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/RemenberMe.png)
 
 ![GetRemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetRemenberMe.png)
 
-Once I determined the column I want to update and the new value, I can call the update method from the DBHandler and pass the necessary parameters. 
-Update table name Users changing the value of Column RememberMe to the current value of currentCheckBoxStatus. Use the column name Username as the referencing column and withing that column update the rowName with the value of Carlos. 
-This will update a specific cell withing an specified table.
+Once I determine the Column I want to update and the new value, I can call the update method from the DBHandler and pass the necessary parameters. Update table name "Users" by changing Column RememberMe to the current value of currentCheckBoxStatus. Use the column "Username" as the referencing Column and within that Column, update the rowName with the value of Carlos. This will update a specific cell within a specified table.
 
 ![UpdatedDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/UpdatedDataInDatabase.png)
 
-Why use a HashMap? When dealing with a pair of values, maps provide the easiest implementations. I could accomplish something similar using an array, but that will require the creation of two arrays, one that holds the column to be updated and another one to hold the value. Both arrays will have to be iterated, and this could increase the chances of errors. A HashMap makes it simple, as it makes it clear to the developer what values will be updated without worrying about the indexes on an array. 
+Why use a HashMap? Maps provide the most straightforward implementations when dealing with a pair of values. I could accomplish something similar using an array, but that will require the creation of two arrays, one that holds the Column to be updated and another to hold the value. Both arrays will have to be iterated, increasing the chances of syntax and logic errors. A HashMap makes it simple, as it clarifies to the developer what values will be updated without worrying about the indexes on an array.
 
 ### Skills 
 
-Through the course of this enhancement, the skills that I can demonstrate are how I can create effective methods that interact with all the tables in the database. These methods work for all possible scenarios that require adding, reading, and updating data. Additionally, I can showcase my ability to create an SQLite database for an android application and perform specific actions based on the user request. Lastly, aside from source code, I'm also able to demonstrate a basic understanding of creating database schema to display a visual representation of the database and how each table interacts with one another.
+Through this enhancement, the skills that I can demonstrate are how I can create effective methods that interact with all the tables in the database. These methods work for all possible scenarios that require adding, reading, and updating data. Additionally, I can showcase my ability to create an SQLite database for an android application and perform specific actions based on the user request. Lastly, aside from source code, I’m also able to demonstrate a basic understanding of creating database schema to display a visual representation of the database and how each table interacts.
 
 
 
