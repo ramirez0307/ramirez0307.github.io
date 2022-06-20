@@ -43,7 +43,7 @@ The original design I had for this application was minimal as I only aimed to ac
 3. Pick Product – Allows the user to pick time and remove it from inventory
 4. Inventory – Display all the item in inventory
 
-![Original Degign](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Inventory%20App%20Original%20Design.png)
+![OldDesign.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OldDesign.png)
 
 As I have mentioned before my goal is to expand the application to perform more task that can be found within a warehouse management system. This will be connected through various activities that will offer the user an easy user experience and interaction. The application will be driven by three key activities: Inbound, outbound, monitor.
 
@@ -57,7 +57,7 @@ Within the outbound part of the app, the user will have the ability to:
 5. View Order Status – View the status of the order
 6. Ship Order history – View the history of any sales order
 
-![OutboudnDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/OutboudnDashboard.png)
+![OutboudnDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OutboundDashboard.png)
 
 ### Outbound
 Within the inbound part of the app, the user will have the ability to:
@@ -66,7 +66,7 @@ Within the inbound part of the app, the user will have the ability to:
 2.	Receive Inbound PO – Validate and receive product according to the inbound PO
 3.	Inbound Queries – Execute different search queries in regard to the inbound PO’s
 
-![InboundDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InboundDashboard.png)
+![InboundDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InboundDashboard.png)
 
 ### Outbound
 Within the inbound part of the app, the user will have the ability to:
@@ -77,7 +77,7 @@ Within the inbound part of the app, the user will have the ability to:
 4.	Replenishment - automatically create replenishment task to move product to pick location when needed.
 5.	Ad-hoc – Allow the user to more product between location when needed
 
-![MonitorDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/MonitorDashboard.png)
+![MonitorDashboard.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/MonitorDashboard.png)
 
 ### Skills 
 
@@ -90,19 +90,19 @@ I Included this artifact for my ePorfolio because I’m able to showcase a more 
 
 ### Array
 
-![Array.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Array.png)
+![Array.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/Array.jpg)
 
 In this case, I decided to make use of a simple Array because I already have prior knowledge of the number of elements and values each array will have. Knowing this information, I’m able to declare and initialize the array in a single line of code, making the code less clustered. The Array "table_name" is empty because it will hold the value depending on the user selection. The users, customers, and vendors array hold the column names for the tables in the database, and using a conditional statement the 'table_name' will be equal to a copy of the table the user wants to interact with. 
 
 ### ArrayList
 
-![ArrayLIst.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/ArrayLIst.png)
+![ArrayLIst.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/ArrayList.jpg)
 
 In this case, a simple array would not be effective since we don’t know how many elements will be entered in the ArrayList. This ArrayList holds Textviews that are created based on the number of entries that exist in the customer's table in the database, which could be 10 or 1000. I created a query that retrieves all the data in the Customer table and stores it as a cursor that will then be read using a while loop. Within the while loop, a text view is created holding all the data from each row, later adding it to the ArrayList. Finally, the ArrayList is read and every element within the array is added to a linear layout and displayed to the user.
 
 ### Map
 
-![Map.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Map.png)
+![Map.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/Map.PNG)
 
 The last example I want to cover is the use of a map, which stores information as a key and value pair. When updating the database, one must specify the column and value that needs to be updated and a map is the best implementation for this scenario. I could achieve the same result by creating two arrays of passing multiple sting values to the method, but this would be counterproductive as it will require a lot of unnecessary code. The update method is implemented, the key serves as the Colum that need to be updated, and the value serves as the new value for the column. The row is specified in the SQL statement using the WHERE clause.
 
@@ -114,7 +114,7 @@ I believe I met the course objective I planned for this enhancement, using the d
 -------------------------------------------------------
 When I first created the DBHandler class, which handles all interaction with the database, I created methods that became repetitive as they performed similar actions. This is very counterproductive as hundreds of queries would be executed in the application, meaning the same code would have to be repeated many times, affecting the application's overall performance.
 
-![OldCodeExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/OldCodeExample.png)
+![OldCodeExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OldCodeExample.PNG)
  
 ### Enhancement intro
 
@@ -122,9 +122,9 @@ For my enhancement, my goal was to create different methods to handle all the ot
 
 ### Insert data into the database method
 
-![DatabaseTableArrays.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/DatabaseTableArrays.png)
+![DatabaseTableArrays.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/DatabaseTableArrays.png)
 
-![InsertDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InsertDataMethod.png)
+![InsertDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InsertDataMethod.png)
 
 The method accepts two parameters, a table name as a string and an array of values that will be entered into the database. Since there are many tables in the database and each table contains a different number of columns, it is not practical to directly pass the name of each column in a table as a parameter. Instead, I will use the table name to determine which table needs to be accessed. To accomplish this, I created multiple arrays named after each of the existing tables in the database, and each variety contains the column names of each table.
 
@@ -137,11 +137,11 @@ The values passed to the array will be obtained in different ways.
 
 1. A new user ID will be automatically generated using the generateUserId() method;
 
-![GenerateUserIdMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GenerateUserIdMethod.png)
+![GenerateUserIdMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GenerateUserIdMethod.png)
 
 2. The username, email, and password will be acquired from the user input, by getting the string values of the textInputEditText within the activity.
 
-![CreateAccountActivity.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/CreateAccountActivity.png)
+![CreateAccountActivity.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/CreateAccountActivity.PNG)
 
 3. Remember me, and Email validation are set to “no” by default and are updated when the necessary action is performed.
 
@@ -149,47 +149,47 @@ The values passed to the array will be obtained in different ways.
 
 When the insertData() method is executed, it will first determine what array needs to be used, so the conditional statement runs. Since the user passed "Users" as the tableName, the first statement is true, making table_name equal to the array user.
 
-![TableSelectionConditionalStatement.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/TableSelectionConditionalStatement.png)
+![TableSelectionConditionalStatement.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/TableSelectionConditionalStatement.png)
 
 Which means that now:
 
-![SelectedTableArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/SelectedTableArray.png)
+![SelectedTableArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/SelectedTableArray.png)
 
-![InitializeEmptyArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InitializeEmptyArray.png)
+![InitializeEmptyArray.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InitializeEmptyArray.png)
 
 Next, a for loop iterate through the table_name array matching each index and putting the information in the contentValues instance as a key: value pair, where the key is the column name specified by the index in table_name and the value is specified by the index in the array of values passed as a parameter.
 
-![LoopToAddDataToContentValue.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/LoopToAddDataToContentValue.png)
+![LoopToAddDataToContentValue.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/LoopToAddDataToContentValue.png)
 
 The for loop above executes the same amount of time as the values that exist in the array. Below is a visual presentation of how this would have been completed by directly passing the key: value pair to the contentValues.
 
-![ExampleOfDirectImput.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/ExampleOfDirectImput.png)
+![ExampleOfDirectImput.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/ExampleOfDirectImput.png)
 
 If we only have one table to interact with, this approach would be ideal as the keys will never change, but since we have multiple tables, this approach would not work since the keys will change based on what table is being used.
 
 Finally, All the data in contentValues is read and entered into its respective table.
 
-![LoopAddDataToDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/LoopAddDataToDatabase.png)
+![LoopAddDataToDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/LoopAddDataToDatabase.png)
 
 ### Get data from the database method
 
-![GetDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetDataMethod.png)
+![GetDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetDataMethod.png)
 
 To retrieve data from the database, I created a simple method that takes a string as a parameter, the string that is passed is an SQL statement that calls for the specific data. For example:
 
 This query gets the username and password from the Username table in the database where the username is Carlos.
 
-![GetDataQueryExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetDataQueryExample.png)
+![GetDataQueryExample.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetDataQueryExample.png)
 
 This query selects all the data from the Vendors database
 
-![GetDataQueryExample2.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetDataQueryExample2.png)
+![GetDataQueryExample2.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetDataQueryExample2.png)
 
 The retrieved data is return as a Cursor which than can be accessed using a while loop to manipulate the rawData it contains.
 
-![SaveDataInCursor.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/SaveDataInCursor.png)
+![SaveDataInCursor.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/SaveDataInCursor.png)
 
-![LoopThrougthTheDataAndPerformAction.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/LoopThrougthTheDataAndPerformAction.png)
+![LoopThrougthTheDataAndPerformAction.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/LoopThrougthTheDataAndPerformAction.png)
 
 ### Update data on the database method
 To update a value in the database I created an update method that takes in four parameters.
@@ -200,27 +200,27 @@ To update a value in the database I created an update method that takes in four 
 
 Each parameter is essential in updating the correct information in the database.
 
-![UpdateDataMathod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/UpdateDataMathod.png)
+![UpdateDataMathod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/UpdateDataMathod.png)
 
 When the user data is originally entered is look as follow:
 
-![OriginalDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/OriginalDataInDatabase.png)
+![OriginalDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/OriginalDataInDatabase.png)
 
 The bellow code updates the data using the code below. 
 
-![InplementsUpdateDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/InplementsUpdateDataMethod.png)
+![InplementsUpdateDataMethod.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/InplementsUpdateDataMethod.png)
 
 How this work? I created a map that contains one input, a key = “RememberMe” whis is the name of the table that will be updated, and a value = currentCheckBoxStatus which is updated based on the status of a checkbox.
 
-![RemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/RemenberMe.png)
+![RemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/RemenberMe.png)
 
-![GetRemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/GetRemenberMe.png)
+![GetRemenberMe.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/GetRemenberMe.png)
 
 Once I determined the column I want to update and the new value, I can call the update method from the DBHandler and pass the necessary parameters. 
 Update table name Users changing the value of Column RememberMe to the current value of currentCheckBoxStatus. Use the column name Username as the referencing column and withing that column update the rowName with the value of Carlos. 
 This will update a specific cell withing an specified table.
 
-![UpdatedDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/UpdatedDataInDatabase.png)
+![UpdatedDataInDatabase.png](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Narrative%20Images/UpdatedDataInDatabase.png)
 
 Why use a HashMap? When dealing with a pair of values, maps provide the easiest implementations. I could accomplish something similar using an array, but that will require the creation of two arrays, one that holds the column to be updated and another one to hold the value. Both arrays will have to be iterated, and this could increase the chances of errors. A HashMap makes it simple, as it makes it clear to the developer what values will be updated without worrying about the indexes on an array. 
 
