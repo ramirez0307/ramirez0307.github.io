@@ -20,9 +20,9 @@ Overall, the computer science program has helped me learn many technical skills 
 
 While taking the IT-315-Object Orient Analysis/Design, I learned to create a diagram that implements all the requirements that a system may need, including external and internal influences. Such as user-case diagrams, CRC Cards and SIS Diagrams.
 
-![CRCCard.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/CRC%20Card.PNG)
-![CRCCard.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/User%20Case%20Diagram.PNG)
-![CRCCard.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/SIS%20Diagram.PNG)
+![CRC%20Card.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/CRC%20Card.PNG)
+![User%20Case%20Diagram.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/User%20Case%20Diagram.PNG)
+![SIS%20Diagram.PNG](https://raw.githubusercontent.com/ramirez0307/ramirez0307.github.io/main/Personal%20Reflection%20Files/SIS%20Diagram.PNG)
 
 Regarding collaborating in a team environment, CS-250 opened the door to the world of teamwork by introducing the software development life cycle (SDLC). In this course, I understood some of the different existing models, such as waterfall, interactive, spiral, and agile. However, since the course was more emphasized the agile methodology, I created a more profound understanding of this model, such as its advantages, disadvantages, and how the entire process is implemented. This skill will be crucial as I take the next step into my career as it provides me with a basic understanding of how a developer team operates.
 
