@@ -139,7 +139,7 @@ The last example I want to cover is the use of a map, which stores information a
 
 ### Skills
 
-I believe I met the course objective I planned for this enhancement, using the different types of data structures I can demonstrate my ability to know when is necessary to use each data structure and how to properly implement them. I did not face any challenges as I have used this data structure before in previous work, so I have a good understanding of how they should be used.
+The skill that I presented in this enhancement is crucial to any program as they could make the difference between a program that is simple or hard to read. Understanding array, array list, and maps provide significant advantages in developing a program, and this data structure allowed me to create code that is not repetitive but efficient. Additionally, I demonstrated why it is essential to know which data structure to use and when it needs to be implemented. Data structure and algorithms for a significant part in even the most simple programs, and adequately implementing them is a skill that any programmer should possess, and this is the skill that I present with this artifact.
 
 # Enhancement Three - Databases  
 -------------------------------------------------------
