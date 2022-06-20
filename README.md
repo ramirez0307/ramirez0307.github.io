@@ -161,7 +161,7 @@ The method accepts two parameters, a table name as a string and an array of valu
 
 How is the suitable array selected? When determining what array to use, I use the “tableName” String to create a copy of the correct array and assign it to an empty array called “table_name.” Lastly, I use a contentValue instance to put each value in the corresponding table. For example, if the user creates a new account, they will pass the following parameters to the insertData() method.
 1. tableName = Users
-2. String [] values = {“00000”, Joe”, “Joe@hotmail.com”, “Joe03”, “no” , “no”}
+2. String [] values = {“00000”, Joe”, “Joe@hotmail.com”, “Joe03”, “no” , “no”}.
 
 #### Obtaining Data
 The values passed to the array will be obtained in different ways.
